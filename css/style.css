@@ -193,3 +193,26 @@ footer h6 a{
     color:linear-gradient(to right, #28b485,#7ed56f) !important;
     font-weight: bold;
 }
+
+.topnavresponsive a{
+	float: none;
+    display: block;
+    text-align:left;
+}
+
+.icon{
+	display: none;
+	background: rgba(0,0,0,.05);
+	
+	margin: 0.3rem 4.5rem;
+	border-radius: 5px;
+}
+
+@media(max-width:740px){
+	
+  	.icon {
+    display: block;
+  }
+	
+	.topnav{display: none;}
+}
