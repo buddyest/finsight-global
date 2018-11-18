@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/hover.css">
     <link rel="stylesheet" type="text/css" href="css/infinite-slider.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.redcloudconsulting.com/dev/wp-content/themes/bridge/img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 </head>
 <body>
 	<header>
@@ -28,42 +35,57 @@
 		  </div>
 		</nav>
 	</header><br>
-	<div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="img-fluid home-slider-image" src="https://www.redcloudconsulting.com/dev/wp-content/uploads/2018/11/EmpoweringYouthSlideNew.jpg" alt="Los Angeles">
-      <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>We had such a great time in LA!</p>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid home-slider-image" src="https://www.redcloudconsulting.com/dev/wp-content/uploads/2018/11/IntegrityBasedGrowthSlide.jpg" alt="Chicago">
-      <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid home-slider-image" src="https://www.redcloudconsulting.com/dev/wp-content/uploads/2018/11/RightJobSlideNew.jpg" alt="New York">
-      <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
-      </div>   
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
+	<ul class="slides">
+	    <input type="radio" name="radio-btn" id="img-1" checked />
+	    <li class="slide-container">
+			<div class="slide">
+				<img src="https://www.redcloudconsulting.com/dev/wp-content/uploads/2018/11/EmpoweringYouthSlideNew.jpg" />
+	        </div>
+			<div class="nav">
+				<label for="img-6" class="prev">&#x2039;</label>
+				<label for="img-2" class="next">&#x203a;</label>
+			</div>
+	    </li>
+
+	    <input type="radio" name="radio-btn" id="img-2" />
+	    <li class="slide-container">
+	        <div class="slide">
+	          <img src="https://www.redcloudconsulting.com/dev/wp-content/uploads/2018/11/IntegrityBasedGrowthSlide.jpg" />
+	        </div>
+			<div class="nav">
+				<label for="img-1" class="prev">&#x2039;</label>
+				<label for="img-3" class="next">&#x203a;</label>
+			</div>
+	    </li>
+
+	    <input type="radio" name="radio-btn" id="img-3" />
+	    <li class="slide-container">
+	        <div class="slide">
+	          <img src="https://www.redcloudconsulting.com/dev/wp-content/uploads/2018/11/RightJobSlideNew.jpg" />
+	        </div>
+			<div class="nav">
+				<label for="img-2" class="prev">&#x2039;</label>
+				<label for="img-4" class="next">&#x203a;</label>
+			</div>
+	    </li>
+
+	    <input type="radio" name="radio-btn" id="img-4" />
+	    <li class="slide-container">
+	        <div class="slide">
+	          <img src="https://www.redcloudconsulting.com/dev/wp-content/uploads/2018/11/TransparencySlidenew.jpg" />
+	        </div>
+			<div class="nav">
+				<label for="img-3" class="prev">&#x2039;</label>
+				<label for="img-5" class="next">&#x203a;</label>
+			</div>
+	    </li>
+	    <li class="nav-dots">
+	      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+	      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+	      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+	      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+	    </li>
+	</ul>
 	<section class="solutions mt-5 mb-5">
 		<div class="text-center pb-3">
 			<h4>Solutions</h4>
@@ -72,71 +94,69 @@
 			<div class="row main-content text-center">
 				<div class="col-md-2 col-sm-2 col-lg-2 m-3 new-card hvr-grow">
 					<div class="icon-content">
-						<i class="fa fa-square fa-stack-base fa-stack-2x"></i>
 						<i class="pb-4 fas fa-handshake"></i>
 						<h6>StartUp Unleashing</h6>
 					</div>					
 				</div>
 				<div class="col-md-2 col-sm-2 col-lg-2 m-3 new-card hvr-grow">
 					<div class="icon-content">
-						<i class="fa fa-square fa-stack-base fa-stack-2x"></i>
 						<i class="pb-4 fas fa-star"></i>
 						<h6>Customer / Partner Engagement</h6>
 					</div>					
 				</div>
 				<div class="col-md-2 col-sm-2 col-lg-2 m-3 new-card hvr-grow">
 					<div class="icon-content">
-						<i class="fa fa-square fa-stack-base fa-stack-2x"></i>
 						<i class="pb-4 fa fa-business-time"></i>
 						<h6>Business Excellence</h6>
 					</div>					
 				</div>
 				<div class="col-md-2 col-sm-2 col-lg-2 m-3 new-card hvr-grow">
 					<div class="icon-content">
-						<i class="fa fa-square fa-stack-base fa-stack-2x"></i>
 						<i class="pb-4 fas fa-digital-tachograph"></i>
 						<h6>Digital Transformations</h6>
 					</div>					
 				</div>
 				<div class="col-md-2 col-sm-2 col-lg-2 m-3 new-card hvr-grow">
 					<div class="icon-content">
-						<i class="fa fa-square fa-stack-base fa-stack-2x"></i>
 						<i class="pb-4 fas fa-database"></i>
 						<h6>Data Analytics</h6>
 					</div>					
 				</div>
 			</div>
-		</div>
+		</div>		
 	</section>
 	<section id="client-slider">
 		<div class="container text-center">
 			<h4>Happy Clients</h4>
 			<p>Some of Our Past and Present Clients That we have worked with</p>
+			//Replace the images with the client logos of your customers
+			<div class="container">
 			  <section class="customer-logos slider">
-			    <div class="slide"><img src="images/image1.png"><h6>Company Name</h6></div>
-			    <div class="slide"><img src="images/image2.png"><h6>Company Name</h6></div>
-			    <div class="slide"><img src="images/image3.png"><h6>Company Name</h6></div>
-			    <div class="slide"><img src="images/image4.png"><h6>Company Name</h6></div>
-			    <div class="slide"><img src="images/image5.png"><h6>Company Name</h6></div>
-			    <div class="slide"><img src="images/image6.png"><h6>Company Name</h6></div>
-			    <div class="slide"><img src="images/image7.png"><h6>Company Name</h6></div>
-			    <div class="slide"><img src="images/image8.png"><h6>Company Name</h6></div>
+			    <div class="slide"><img src="images/image1.png"></div>
+			    <div class="slide"><img src="images/image2.png"></div>
+			    <div class="slide"><img src="images/image3.png"></div>
+			    <div class="slide"><img src="images/image4.png"></div>
+			    <div class="slide"><img src="images/image5.png"></div>
+			    <div class="slide"><img src="images/image6.png"></div>
+			    <div class="slide"><img src="images/image7.png"></div>
+			    <div class="slide"><img src="images/image8.png"></div>
 			  </section>
+			</div>
 		</div>
 	</section>
-	<section class="latest-post pt-4 pb-5 text-center text-capitalize">
+	<section class="latest-post pt-4 pb-4 text-center text-capitalize">
 		<h4 class="text-dark text-center">The Latest from Finsight</h4><br>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="offset-sm-1 col-md-3 col-sm-3 col-lg-3 single-post mx-auto d-inline-block">
+				<div class="col-md-3 single-post d-inline-block">
 					<p>WORKFORCE MANAGEMENT CASE STUDY: COMMERCIAL CUSTOMER SUPPORT, FORECASTS, AND SCHEDULING</p>
 					<span>November 15, 2018</span>
 				</div>
-				<div class="col-md-3 col-sm-3 col-lg-3 single-post mx-auto d-inline-block">
+				<div class="col-md-3 single-post d-inline-block">
 					<p>UNIFIED SUPPORT CASE STUDY: STRATEGY, PROCESSES, AND GOVERNANCE FOR ENTERPRISE SALES</p>
 					<span>November 8, 2018</span>
 				</div>
-				<div class="col-md-3 col-sm-3 col-lg-3 single-post mx-auto d-inline-block">
+				<div class="col-md-3 single-post d-inline-block">
 					<p>UNIFIED SUPPORT CASE STUDY: STRATEGY, PROCESSES, AND GOVERNANCE FOR ENTERPRISE SALES</p>
 					<span>November 8, 2018</span>
 				</div>
@@ -163,20 +183,13 @@
 				</div>
 				<div class="col-md-3 case-studies text-justify">
 					<h5 class="mb-3">Testimonials</h5>
-					<section class="testimonial slider">
-					    <div class="slide"><p>WORKFORCE MANAGEMENT CASE STUDY: COMMERCIAL CUSTOMER SUPPORT, FORECASTS, AND SCHEDULING</p></div>
-					    <div class="slide"><p>WORKFORCE MANAGEMENT CASE STUDY: COMMERCIAL CUSTOMER SUPPORT, FORECASTS, AND SCHEDULING</p></div>
-					    <div class="slide"><p>WORKFORCE MANAGEMENT CASE STUDY: COMMERCIAL CUSTOMER SUPPORT, FORECASTS, AND SCHEDULING</p></div>
-			  		</section>
+					<p>UNIFIED SUPPORT CASE STUDY: STRATEGY, PROCESSES, AND GOVERNANCE FOR ENTERPRISE SALES</p>
+					<p>UNIFIED SUPPORT CASE STUDY: STRATEGY, PROCESSES, AND GOVERNANCE FOR ENTERPRISE SALES</p>
+					<p>UNIFIED SUPPORT CASE STUDY: STRATEGY, PROCESSES, AND GOVERNANCE FOR ENTERPRISE SALES</p>
 				</div>
 			</div>
 		</div>		
 	</section>
-	<a href="javascript:void(0)" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+	<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 </body>
 </html>
