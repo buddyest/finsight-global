@@ -22,13 +22,17 @@ body{
 
 
 /*Solutions Section*/
+.solutions{
+    background: #262626;
+    color: #fff;
+}
 .solutions .heading{
     color: #000;
     text-align: center;
 }
 .new-card{
 	box-sizing: border-box;
-	box-shadow: 10px 10px 40px 0 #5f5f5f;
+	box-shadow: 5px 5px 10px 5px var(--main-bg-color);
 	padding: 3%;
 	/*border:1px solid #000;*/
 }
@@ -45,10 +49,9 @@ body{
 }
 
 
-
 /*Client Slider*/
 #client-slider{
-    margin: 5rem;
+    margin: 3rem;
 }
 
 
@@ -65,7 +68,7 @@ body{
     padding: 2rem;
 }
 .single-post p{
-    height: 150px;
+    height: 100px;
 }
 
 
