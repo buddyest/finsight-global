@@ -6,16 +6,16 @@ $(document).ready(function(){
     autoplaySpeed: 1000,
     arrows: false,
     dots: false,
-    pauseOnHover: false,
+    pauseOnHover: true,
     responsive: [{
       breakpoint: 768,
       settings: {
-        slidesToShow: 4
+        slidesToShow: 2
       }
     }, {
-      breakpoint: 520,
+      breakpoint: 320,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 2
       }
     }]
   });
@@ -26,16 +26,16 @@ $(document).ready(function(){
     autoplaySpeed: 1000,
     arrows: false,
     dots: false,
-    pauseOnHover: false,
+    pauseOnHover: true,
     responsive: [{
       breakpoint: 768,
       settings: {
-        slidesToShow: 4
+        slidesToShow: 2
       }
     }, {
-      breakpoint: 520,
+      breakpoint: 320,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 2
       }
     }]
   });
