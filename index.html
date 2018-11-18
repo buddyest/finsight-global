@@ -28,7 +28,11 @@
 		  <a class="navbar-brand ml-5" href="#">
 		    <img src="images/logo.jpeg">
 		  </a>
-		  <div class="float-right">
+			<div class="icon float-right">
+			<a href="javascript:void(0);" class="text-dark text-right" onClick="myFunction()">
+			<i class="fa fa-bars"></i></a>
+		</div>
+		  <div class="float-right topnav" id="myTopnav">
 			<a class="btn-link m-3" href="#">Solutions</a>
 		  	<a class="btn-link m-3" href="#">Clients</a>
 		  	<a class="btn-link m-3" href="#">Success Stories</a>
@@ -217,6 +221,31 @@
 	<script>
 		new WOW().init();
 	</script>
-	  	
+	  <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += "responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+function myFunction2(y){
+		var x = document.getElementById("myTopnav");
+		if(y.matches){
+ 		if (x.className === "topnavresponsive") {
+        x.className += "topnav";
+    } else {
+        x.className = "topnav";
+    }
+		}
+	else{
+		x.className = "topnav";
+	}
+}
+	var y = window.matchMedia("(max-width: 700px)")
+myFunction2(y) // Call listener function at run time
+y.addListener(myFunction2) // Attach listener function on state changes
+</script>	
 </body>
 </html>
