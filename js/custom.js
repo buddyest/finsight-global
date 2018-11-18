@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#preloader").slideToggle(1000);
   $('.customer-logos').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
